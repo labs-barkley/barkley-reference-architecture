@@ -6,6 +6,7 @@
 ![Data](https://img.shields.io/badge/data-synthetic%20only-orange)
 ![Status](https://img.shields.io/badge/status-research%20demonstrator-lightgrey)
 ![Use](https://img.shields.io/badge/use-non--diagnostic-critical)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20369864.svg)](https://doi.org/10.5281/zenodo.20369864)
 
 > A dog can remain normal for its breed while drifting away from its own behavioral baseline.
 
@@ -339,6 +340,7 @@ it does not reproduce the others, and it does not expose the full Barkley system
 | **GitHub — Canine Cognition Lab** | https://github.com/labs-barkley/barkley-canine-cognition-lab |
 | **Hugging Face dataset** | https://huggingface.co/datasets/labs-barkley/synthetic-doggraph-sample |
 | **Zenodo — Framework paper** | https://zenodo.org/records/20060327 |
+| **Zenodo — This repository** | https://zenodo.org/records/20369864 |
 | **Contact** | labs@getbarkley.com |
 
 ---
@@ -365,9 +367,19 @@ Plain text:
 > Remoissenet, E.P. (2026). *Barkley: Individual-Referenced Behavioral Intelligence
 > for Dogs (Framework Paper).* Zenodo. https://doi.org/10.5281/zenodo.20060327
 
-> **Note:** The DOI above belongs to the framework paper. A separate software DOI
-> will be minted for this repository once it is archived on Zenodo from a tagged
-> GitHub release; this section will be updated at that point.
+```bibtex
+@software{remoissenet2026barkleyref,
+  author    = {Remoissenet, Elodie P.},
+  title     = {Barkley Reference Architecture},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20369864},
+  url       = {https://doi.org/10.5281/zenodo.20369864}
+}
+```
+
+> Software DOI: [10.5281/zenodo.20369864](https://doi.org/10.5281/zenodo.20369864)
+> Framework paper DOI: [10.5281/zenodo.20060327](https://doi.org/10.5281/zenodo.20060327)
 
 ---
 
