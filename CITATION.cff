@@ -15,7 +15,7 @@ authors:
   - family-names: Remoissenet
     given-names: Elodie P.
     orcid: https://orcid.org/0009-0004-6031-659X
-version: 0.1.0
+version: 0.1.1
 date-released: "2026-05-24"
 repository-code: https://github.com/labs-barkley/barkley-reference-architecture
 url: https://github.com/labs-barkley/barkley-reference-architecture
@@ -28,9 +28,11 @@ keywords:
   - time-series
   - canine-cognition
   - research-demonstrator
-# NOTE: The DOI below belongs to the framework paper, not to this repository.
-# A separate software DOI will be minted once this repo is archived on Zenodo
-# from a tagged release; add it here as `doi:` and `identifiers:` at that point.
+doi: 10.5281/zenodo.20369864
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20369864
+    description: "Software DOI for this repository (v0.1.1)"
 references:
   - type: article
     title: >-
