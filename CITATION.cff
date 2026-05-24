@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: Barkley Reference Architecture
+message: >-
+  This repository accompanies the Barkley framework paper. If you use this
+  software in your research, please cite the framework paper below.
+abstract: >-
+  A source-available research demonstrator for individual-referenced behavioral
+  intelligence in dogs. Demonstrates, on fully synthetic data only, an individual
+  baseline (ICF), multi-resolution temporal binning, Rate of Drift / behavioral
+  drift detection, missingness classification (Sovereignty of Silence), and a
+  DogGraph-compatible event schema. Research demonstrator only; not diagnostic;
+  not production.
+type: software
+authors:
+  - family-names: Remoissenet
+    given-names: Elodie P.
+    orcid: https://orcid.org/0009-0004-6031-659X
+version: 0.1.0
+date-released: "2026-05-24"
+repository-code: https://github.com/labs-barkley/barkley-reference-architecture
+url: https://github.com/labs-barkley/barkley-reference-architecture
+license-url: https://github.com/labs-barkley/barkley-reference-architecture/blob/main/LICENSE
+keywords:
+  - behavioral-ai
+  - longitudinal-modeling
+  - synthetic-data
+  - knowledge-graph
+  - time-series
+  - canine-cognition
+  - research-demonstrator
+# NOTE: The DOI below belongs to the framework paper, not to this repository.
+# A separate software DOI will be minted once this repo is archived on Zenodo
+# from a tagged release; add it here as `doi:` and `identifiers:` at that point.
+references:
+  - type: article
+    title: >-
+      Barkley: Individual-Referenced Behavioral Intelligence for Dogs
+      (Framework Paper)
+    authors:
+      - family-names: Remoissenet
+        given-names: Elodie P.
+    year: 2026
+    doi: 10.5281/zenodo.20060327
+    url: https://zenodo.org/records/20060327
+    publisher:
+      name: Zenodo

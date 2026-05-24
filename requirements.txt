@@ -1,0 +1,9 @@
+# Barkley Reference Architecture — runtime dependencies
+# Python 3.10+  |  No GPU required  |  No proprietary data
+#
+# The core pipeline (barkley/) uses only the Python standard library.
+# numpy and pandas are required only for synthetic data generation and
+# the temporal binning module.
+
+numpy>=1.24
+pandas>=2.0

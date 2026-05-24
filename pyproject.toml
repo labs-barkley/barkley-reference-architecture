@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "barkley-reference-architecture"
+version = "0.1.0"
+description = "A source-available research demonstrator for individual-referenced behavioral intelligence in dogs."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Elodie P. Remoissenet", email = "labs@getbarkley.com" }]
+keywords = [
+    "behavioral-ai",
+    "longitudinal-modeling",
+    "synthetic-data",
+    "knowledge-graph",
+    "time-series",
+    "canine-cognition",
+    "research-demonstrator",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: Other/Proprietary License",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "mypy>=1.0"]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage   = "https://github.com/labs-barkley/barkley-reference-architecture"
+Repository = "https://github.com/labs-barkley/barkley-reference-architecture"
+Lab        = "https://github.com/labs-barkley/barkley-canine-cognition-lab"
+
+[tool.setuptools.packages.find]
+include = ["barkley*"]
+
+# ---------------------------------------------------------------------------
+# Test configuration
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+# ---------------------------------------------------------------------------
+# Type-checking configuration (lightweight — not strict)
+# ---------------------------------------------------------------------------
+# numpy/pandas ship partial or third-party stubs; we do not require them here.
+# This config type-checks the library surface without forcing a heavy refactor.
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+warn_unused_ignores = false
+warn_return_any = false
+no_implicit_optional = true
+check_untyped_defs = false

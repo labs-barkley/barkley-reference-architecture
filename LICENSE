@@ -1,0 +1,51 @@
+Barkley Reference Architecture
+Source-Available Research License
+
+Copyright 2026 Elodie P. Remoissenet — Barkley AI
+
+Permission is granted to use, copy, modify, and distribute this software
+and associated documentation files (the "Software") solely for research,
+educational, and evaluation purposes, subject to the following conditions:
+
+1. RESEARCH AND EDUCATION ONLY.
+   Commercial use, clinical use, diagnostic application, or integration into
+   any production system is prohibited without explicit written permission
+   from the copyright holder.
+
+2. ATTRIBUTION.
+   The above copyright notice and this permission notice shall be included
+   in all copies or substantial portions of the Software.
+
+3. NON-DIAGNOSTIC.
+   This software is a research demonstrator using fully synthetic data.
+   It is not a diagnostic tool, not a validated clinical instrument, and
+   not a medical device. Any output constitutes a research artifact, not
+   a clinical finding. It must not be used to make decisions about the
+   health, welfare, or treatment of any animal or person.
+
+4. NO PRODUCTION DEPLOYMENT.
+   Deployment in any system that makes or influences real-world decisions
+   about animals, owners, veterinarians, or clinical workflows requires
+   explicit written permission and independent validation.
+
+5. CITATION.
+   This repository accompanies the Barkley framework paper. Any publication or
+   presentation using this software should cite the framework paper:
+
+       Remoissenet, E.P. (2026). Barkley: Individual-Referenced Behavioral
+       Intelligence for Dogs (Framework Paper).
+       Zenodo. https://doi.org/10.5281/zenodo.20060327
+
+   (A separate software DOI will be minted once this repository is archived
+   on Zenodo from a tagged release.)
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+For commercial licensing or research collaboration:
+labs@getbarkley.com
