@@ -1,7 +1,7 @@
 # NOTICE
 
 **Barkley Reference Architecture**
-© 2026 Elodie P. Remoissenet — Barkley AI.
+© 2026 Elodie Aishwarya P. Remoissenet — Barkley AI.
 
 This repository is a **source-available research demonstrator**. The following
 points define its scope and intended use. Please read them before use,

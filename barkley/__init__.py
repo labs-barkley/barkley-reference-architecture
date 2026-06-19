@@ -39,7 +39,7 @@ from .individual_baseline import ICF, ICF_INIT_DAYS, baseline_loss
 from .rate_of_drift import CUSUM, BOCPD_BLS, rate_of_drift
 
 __version__ = "0.1.0"
-__author__  = "Elodie P. Remoissenet — Barkley AI"
+__author__  = "Elodie Aishwarya P. Remoissenet — Barkley AI"
 __license__ = "Source-Available Research License"
 __email__   = "labs@getbarkley.com"
 

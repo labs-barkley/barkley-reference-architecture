@@ -22,4 +22,4 @@ Because of that scope:
   [NOTICE.md](NOTICE.md). Contributions must use **synthetic data only** - never real
   animal data of any kind.
 
-(c) 2026 Elodie P. Remoissenet - Barkley AI - labs@getbarkley.com
+(c) 2026 Elodie Aishwarya P. Remoissenet - Barkley AI - labs@getbarkley.com
