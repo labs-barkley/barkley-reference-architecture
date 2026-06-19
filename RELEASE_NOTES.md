@@ -1,3 +1,37 @@
+# v0.2.0 - Head-to-head: individual vs population reference
+
+Adds a reproducible synthetic head-to-head that addresses the open empirical question
+in the framework paper (Section 6, Q1): does the individual baseline actually
+outperform the population reference for welfare-relevant change?
+
+This is a proof-of-concept on fully synthetic data - not validation on real dogs.
+
+Added:
+- examples/head_to_head_validation.py - individual- vs population-referenced detection
+  on a heterogeneous synthetic cohort, built on the existing barkley package (same ICF
+  baseline, same CUSUM detector; only the reference frame differs).
+- results/barkley_head_to_head.png - 4-panel figure (mean ROC +/- SD, detection-lag
+  distributions, heterogeneity sweep with error bars, calm-dog false-reassurance).
+- results/HEAD_TO_HEAD_RESULTS.md - method, fairness contract, and full results.
+- README "Worked example" section.
+
+Method: both arms use the same detector (CUSUM), the same robust statistic
+(median + MAD), and the same 56-day calibration window; the population arm gets the
+pooled-cohort advantage. Healthy controls are included and false alarms are measured
+(threshold-independent ROC + matched operating point). Every condition is averaged over
+30 independent synthetic seeds (mean +/- SD).
+
+Result (synthetic, illustrative): as between-dog heterogeneity grows, the population
+"normal" band widens until a calm dog's genuine decline stays inside it - the
+false-reassurance mechanism the paper names the reference-class trap. The individual
+reference holds 100% detection at a matched 10% false-alarm rate across all
+heterogeneity levels tested; the population reference falls from ~100% to ~56% as
+heterogeneity grows. At low heterogeneity the two are comparable. The advantage is
+conditional, not universal. The real-data head-to-head remains the open validation step.
+
+Zenodo (this version): 10.5281/zenodo.20754351
+
+---
 # Release Notes
 
 ## v0.1.0 — Initial public release (2026-05-24)
