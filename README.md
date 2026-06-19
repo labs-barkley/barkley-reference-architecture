@@ -6,7 +6,7 @@
 ![Data](https://img.shields.io/badge/data-synthetic%20only-orange)
 ![Status](https://img.shields.io/badge/status-research%20demonstrator-lightgrey)
 ![Use](https://img.shields.io/badge/use-non--diagnostic-critical)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20369864.svg)](https://doi.org/10.5281/zenodo.20369864)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20369863.svg)](https://doi.org/10.5281/zenodo.20369863)
 
 > A dog can remain normal for its breed while drifting away from its own behavioral baseline.
 
@@ -366,15 +366,34 @@ it does not reproduce the others, and it does not expose the full Barkley system
 | **GitHub — Canine Cognition Lab** | https://github.com/labs-barkley/barkley-canine-cognition-lab |
 | **Hugging Face dataset** | https://huggingface.co/datasets/labs-barkley/synthetic-doggraph-sample |
 | **Zenodo — Framework paper** | https://zenodo.org/records/20060327 |
-| **Zenodo — This repository** | https://zenodo.org/records/20369864 |
+| **Zenodo — This repository** | https://zenodo.org/records/20754351 |
 | **Contact** | labs@getbarkley.com |
 
 ---
 
 ## Citation
 
-This repository **accompanies the Barkley framework paper**. If you use it in
-your research, please cite the framework paper:
+This repository **accompanies the Barkley Reference-Class Trap working paper**. If you use it in
+your research, please cite the working paper (and, optionally, the framework paper and the software):
+
+```bibtex
+@misc{remoissenet2026referenceclasstrap,
+  author    = {Remoissenet, Elodie Aishwarya P.},
+  title     = {The Reference-Class Trap in Animal-Computer Interaction:
+               Toward Individual Longitudinal Baselines in Companion-Animal
+               Behavioral Monitoring},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20756552},
+  url       = {https://doi.org/10.5281/zenodo.20756552}
+}
+```
+
+Plain text:
+
+> Remoissenet, E.A.P. (2026). *The Reference-Class Trap in Animal-Computer
+> Interaction: Toward Individual Longitudinal Baselines in Companion-Animal
+> Behavioral Monitoring.* Zenodo. https://doi.org/10.5281/zenodo.20756552
 
 ```bibtex
 @misc{remoissenet2026barkleyframework,
@@ -399,12 +418,13 @@ Plain text:
   title     = {Barkley Reference Architecture},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20369864},
-  url       = {https://doi.org/10.5281/zenodo.20369864}
+  doi       = {10.5281/zenodo.20754351},
+  url       = {https://doi.org/10.5281/zenodo.20754351}
 }
 ```
 
-> Software DOI: [10.5281/zenodo.20369864](https://doi.org/10.5281/zenodo.20369864)
+> Working paper DOI: [10.5281/zenodo.20756552](https://doi.org/10.5281/zenodo.20756552) (concept: [10.5281/zenodo.20754391](https://doi.org/10.5281/zenodo.20754391))
+> Software DOI: [10.5281/zenodo.20754351](https://doi.org/10.5281/zenodo.20754351)
 > Framework paper DOI: [10.5281/zenodo.20060327](https://doi.org/10.5281/zenodo.20060327)
 
 ---

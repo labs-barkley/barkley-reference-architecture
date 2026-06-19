@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 title: Barkley Reference Architecture
 message: >-
-  This repository accompanies the Barkley framework paper. If you use this
-  software in your research, please cite the framework paper below.
+  This repository accompanies the Barkley Reference-Class Trap working paper. If you use this
+  software in your research, please cite the references below.
 abstract: >-
   A source-available research demonstrator for individual-referenced behavioral
   intelligence in dogs. Demonstrates, on fully synthetic data only, an individual
@@ -15,8 +15,8 @@ authors:
   - family-names: Remoissenet
     given-names: Elodie P.
     orcid: https://orcid.org/0009-0004-6031-659X
-version: 0.1.1
-date-released: "2026-05-24"
+version: 0.2.0
+date-released: "2026-06-19"
 repository-code: https://github.com/labs-barkley/barkley-reference-architecture
 url: https://github.com/labs-barkley/barkley-reference-architecture
 license-url: https://github.com/labs-barkley/barkley-reference-architecture/blob/main/LICENSE
@@ -28,12 +28,25 @@ keywords:
   - time-series
   - canine-cognition
   - research-demonstrator
-doi: 10.5281/zenodo.20369864
+doi: 10.5281/zenodo.20754351
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20369864
-    description: "Software DOI for this repository (v0.1.1)"
+    value: 10.5281/zenodo.20754351
+    description: "Software DOI for this repository (v0.2.0)"
 references:
+  - type: article
+    title: >-
+      The Reference-Class Trap in Animal-Computer Interaction: Toward
+      Individual Longitudinal Baselines in Companion-Animal Behavioral
+      Monitoring
+    authors:
+      - family-names: Remoissenet
+        given-names: Elodie Aishwarya P.
+    year: 2026
+    doi: 10.5281/zenodo.20756552
+    url: https://doi.org/10.5281/zenodo.20756552
+    publisher:
+      name: Zenodo
   - type: article
     title: >-
       Barkley: Individual-Referenced Behavioral Intelligence for Dogs
