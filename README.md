@@ -99,6 +99,32 @@ python -m pytest tests/ -v
 
 ---
 
+## Worked example: individual vs population reference
+
+A reproducible synthetic head-to-head — individual-referenced vs population-referenced
+detection on a heterogeneous cohort — addressing the open question in the framework
+paper (§6, Q1): *does the individual baseline actually outperform the population
+reference for welfare-relevant change?*
+
+```bash
+python examples/head_to_head_validation.py
+# figure -> results/barkley_head_to_head.png
+```
+
+Both arms use the **same** detector (CUSUM), the **same** robust statistic
+(median + MAD), and the **same** 56-day calibration window; only the *reference frame*
+differs — the dog's own history vs the pooled cohort. Healthy controls are included,
+false alarms are measured, and every condition is averaged over 30 synthetic seeds
+(mean ± SD). As between-dog heterogeneity grows, the population reference's "normal"
+band widens until a calm dog's genuine decline stays inside it — the false-reassurance
+mechanism the framework paper names the *reference-class trap*.
+
+See [`results/HEAD_TO_HEAD_RESULTS.md`](results/HEAD_TO_HEAD_RESULTS.md) for the method,
+the fairness contract, and the figure. **This is a proof-of-concept on synthetic data —
+not validation on real dogs.**
+
+---
+
 ## Repository structure
 
 ```
