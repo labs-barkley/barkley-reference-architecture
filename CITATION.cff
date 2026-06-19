@@ -13,7 +13,7 @@ abstract: >-
 type: software
 authors:
   - family-names: Remoissenet
-    given-names: Elodie P.
+    given-names: Elodie Aishwarya P.
     orcid: https://orcid.org/0009-0004-6031-659X
 version: 0.2.0
 date-released: "2026-06-19"
@@ -53,7 +53,7 @@ references:
       (Framework Paper)
     authors:
       - family-names: Remoissenet
-        given-names: Elodie P.
+        given-names: Elodie Aishwarya P.
     year: 2026
     doi: 10.5281/zenodo.20060327
     url: https://zenodo.org/records/20060327

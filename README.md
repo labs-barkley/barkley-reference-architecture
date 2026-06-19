@@ -6,7 +6,9 @@
 ![Data](https://img.shields.io/badge/data-synthetic%20only-orange)
 ![Status](https://img.shields.io/badge/status-research%20demonstrator-lightgrey)
 ![Use](https://img.shields.io/badge/use-non--diagnostic-critical)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20369863.svg)](https://doi.org/10.5281/zenodo.20369863)
+[![Software DOI](https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20369863-1a6b72)](https://doi.org/10.5281/zenodo.20369863)
+[![Working Paper DOI](https://img.shields.io/badge/Working_Paper_DOI-10.5281%2Fzenodo.20756552-1a6b72)](https://doi.org/10.5281/zenodo.20756552)
+[![Framework Paper DOI](https://img.shields.io/badge/Framework_Paper_DOI-10.5281%2Fzenodo.20060327-0a2342)](https://doi.org/10.5281/zenodo.20060327)
 
 > A dog can remain normal for its breed while drifting away from its own behavioral baseline.
 
@@ -102,7 +104,7 @@ python -m pytest tests/ -v
 ## Worked example: individual vs population reference
 
 A reproducible synthetic head-to-head — individual-referenced vs population-referenced
-detection on a heterogeneous cohort — addressing the open question in the framework
+detection on a heterogeneous cohort — addressing the open question in the Reference-Class Trap working
 paper (§6, Q1): *does the individual baseline actually outperform the population
 reference for welfare-relevant change?*
 
@@ -117,7 +119,7 @@ differs — the dog's own history vs the pooled cohort. Healthy controls are inc
 false alarms are measured, and every condition is averaged over 30 synthetic seeds
 (mean ± SD). As between-dog heterogeneity grows, the population reference's "normal"
 band widens until a calm dog's genuine decline stays inside it — the false-reassurance
-mechanism the framework paper names the *reference-class trap*.
+mechanism the working paper names the *reference-class trap*.
 
 See [`results/HEAD_TO_HEAD_RESULTS.md`](results/HEAD_TO_HEAD_RESULTS.md) for the method,
 the fairness contract, and the figure. **This is a proof-of-concept on synthetic data —
@@ -133,8 +135,8 @@ barkley-reference-architecture/
 ├── README.md
 ├── LICENSE                        Source-available research license
 ├── NOTICE.md                      Ownership, research-only, synthetic-only scope
-├── RELEASE_NOTES.md               v0.1.0 release notes
-├── CITATION.cff                   Citation metadata (accompanies the framework paper)
+├── RELEASE_NOTES.md               release notes
+├── CITATION.cff                   Citation metadata (accompanies the working paper)
 ├── pyproject.toml                 Packaging + pytest/mypy configuration
 ├── requirements.txt               numpy + pandas (Python 3.10+)
 ├── .gitignore
@@ -341,18 +343,19 @@ A few important conditions for any such use:
 
 ## Relationship to the Barkley ecosystem
 
-This repository is one of four public research artifacts. Each plays a distinct,
+This repository is one of five public research artifacts. Each plays a distinct,
 non-overlapping role:
 
 | Artifact | Role |
 |---|---|
 | **Framework Paper** (Zenodo) | Conceptual foundation — *why* the individual reference frame matters |
+| **Reference-Class Trap Paper** (Zenodo) | The argument — *that* an individual baseline outperforms population reference, with a synthetic head-to-head |
 | **Reference Architecture** (this repo) | Computational backbone — *how* the mechanics work, runnable on synthetic data |
 | **Synthetic DogGraph Dataset** (Hugging Face) | Data artifact — a public synthetic sample to explore |
 | **Drift Explorer** (interactive) | Visual proof — *seeing* the reference frame in action |
 
 Together they demonstrate that the thesis is not just a concept: it has a
-conceptual foundation, a computational backbone, a data artifact, and an
+conceptual foundation, a falsifiable argument, a computational backbone, a data artifact, and an
 interactive demonstration. This repository is deliberately the *minimal* backbone —
 it does not reproduce the others, and it does not expose the full Barkley system.
 
@@ -366,6 +369,7 @@ it does not reproduce the others, and it does not expose the full Barkley system
 | **GitHub — Canine Cognition Lab** | https://github.com/labs-barkley/barkley-canine-cognition-lab |
 | **Hugging Face dataset** | https://huggingface.co/datasets/labs-barkley/synthetic-doggraph-sample |
 | **Zenodo — Framework paper** | https://zenodo.org/records/20060327 |
+| **Zenodo — Reference-Class Trap paper** | https://zenodo.org/records/20756552 |
 | **Zenodo — This repository** | https://zenodo.org/records/20754351 |
 | **Contact** | labs@getbarkley.com |
 
@@ -397,7 +401,7 @@ Plain text:
 
 ```bibtex
 @misc{remoissenet2026barkleyframework,
-  author    = {Remoissenet, Elodie P.},
+  author    = {Remoissenet, Elodie Aishwarya P.},
   title     = {Barkley: Individual-Referenced Behavioral Intelligence for Dogs
                (Framework Paper)},
   year      = {2026},
@@ -409,12 +413,12 @@ Plain text:
 
 Plain text:
 
-> Remoissenet, E.P. (2026). *Barkley: Individual-Referenced Behavioral Intelligence
+> Remoissenet, E.A.P. (2026). *Barkley: Individual-Referenced Behavioral Intelligence
 > for Dogs (Framework Paper).* Zenodo. https://doi.org/10.5281/zenodo.20060327
 
 ```bibtex
 @software{remoissenet2026barkleyref,
-  author    = {Remoissenet, Elodie P.},
+  author    = {Remoissenet, Elodie Aishwarya P.},
   title     = {Barkley Reference Architecture},
   year      = {2026},
   publisher = {Zenodo},
@@ -436,4 +440,4 @@ Source-Available Research License — see [`LICENSE`](LICENSE).
 **Summary:** Free for research, education, and evaluation. Commercial use,
 clinical use, or production deployment requires explicit written permission.
 
-© 2026 Elodie P. Remoissenet — Barkley AI · labs@getbarkley.com
+© 2026 Elodie Aishwarya P. Remoissenet — Barkley AI · labs@getbarkley.com
