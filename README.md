@@ -147,6 +147,7 @@ barkley-reference-architecture/
 ├── NOTICE.md                       Ownership, research-only, synthetic-only scope
 ├── CONTRIBUTING.md                 Contribution guidelines
 ├── SECURITY.md                     Security & responsible-disclosure policy
+├── CLAUDE.md                       Repo guide for Claude Code (AI-assisted dev)
 ├── RELEASE_NOTES.md                release notes
 ├── CITATION.cff                    Citation metadata (accompanies the working paper)
 ├── pyproject.toml                  Packaging + pytest/mypy configuration
