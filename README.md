@@ -121,6 +121,16 @@ false alarms are measured, and every condition is averaged over 30 synthetic see
 band widens until a calm dog's genuine decline stays inside it — the false-reassurance
 mechanism the working paper names the *reference-class trap*.
 
+**Headline result** (primary cohort: σ = 0.10, 100 declining + 100 healthy, 30 seeds, mean ± SD):
+
+| Metric | Individual | Population |
+|---|---|---|
+| ROC AUC (declining vs healthy) | **0.988 ± 0.010** | 0.935 ± 0.020 |
+| Declines caught @ ~10% false-alarm | **100% ± 0%** | 81% ± 20% |
+| Median detection lag | **50 ± 14 d** | 84 ± 16 d |
+
+At a matched false-alarm budget the population reference misses ~19% of the declines the individual reference catches, and is ~34 days slower on the rest. The gap widens with cohort heterogeneity — at σ = 0.14 the population reference catches only 56% while the individual stays at 100%. **Conditional, not absolute:** when individuals barely differ (σ ≤ 0.05) the population reference is just as good; the advantage is the *relative* trend, and the individual arm has its own cost (it can flag benign individual change). Synthetic proof-of-concept, not validation on real dogs.
+
 See [`results/HEAD_TO_HEAD_RESULTS.md`](results/HEAD_TO_HEAD_RESULTS.md) for the method,
 the fairness contract, and the figure. **This is a proof-of-concept on synthetic data —
 not validation on real dogs.**
@@ -133,35 +143,42 @@ not validation on real dogs.**
 barkley-reference-architecture/
 │
 ├── README.md
-├── LICENSE                        Source-available research license
-├── NOTICE.md                      Ownership, research-only, synthetic-only scope
-├── RELEASE_NOTES.md               release notes
-├── CITATION.cff                   Citation metadata (accompanies the working paper)
-├── pyproject.toml                 Packaging + pytest/mypy configuration
-├── requirements.txt               numpy + pandas (Python 3.10+)
+├── LICENSE                         Source-available research license
+├── NOTICE.md                       Ownership, research-only, synthetic-only scope
+├── CONTRIBUTING.md                 Contribution guidelines
+├── SECURITY.md                     Security & responsible-disclosure policy
+├── RELEASE_NOTES.md                release notes
+├── CITATION.cff                    Citation metadata (accompanies the working paper)
+├── pyproject.toml                  Packaging + pytest/mypy configuration
+├── requirements.txt                numpy + pandas (Python 3.10+)
 ├── .gitignore
 │
 ├── .github/
 │   └── workflows/
-│       └── test.yml               CI: pipeline + tests + type-check (3.10, 3.11)
+│       └── test.yml                CI: pipeline + tests + type-check (3.10, 3.11)
 │
 ├── barkley/
-│   ├── __init__.py                Public API
-│   ├── schema.py                  DogGraph event schema — the memory layer
-│   ├── synthetic.py               Deterministic synthetic dog generator
-│   ├── temporal_binning.py        Bin A (circadian) / B (weekly) / C (quarterly)
-│   ├── individual_baseline.py     ICF — per-dog median+MAD baseline
-│   ├── rate_of_drift.py           CUSUM + BOCPD-BLS + Rate of Drift
-│   └── missingness.py             Sovereignty of Silence taxonomy
+│   ├── __init__.py                 Public API
+│   ├── schema.py                   DogGraph event schema — the memory layer
+│   ├── synthetic.py                Deterministic synthetic dog generator
+│   ├── temporal_binning.py         Bin A (circadian) / B (weekly) / C (quarterly)
+│   ├── individual_baseline.py      ICF — per-dog median+MAD baseline
+│   ├── rate_of_drift.py            CUSUM + BOCPD-BLS + Rate of Drift
+│   └── missingness.py              Sovereignty of Silence taxonomy
 │
 ├── examples/
-│   └── run_reference_pipeline.py  End-to-end reference pipeline
+│   ├── run_reference_pipeline.py   End-to-end reference pipeline
+│   └── head_to_head_validation.py  Individual vs population head-to-head (30 seeds)
+│
+├── results/
+│   ├── HEAD_TO_HEAD_RESULTS.md     Head-to-head method, results & honest reading
+│   └── barkley_head_to_head.png    Head-to-head figure (ROC, lag, sweep)
 │
 ├── tests/
-│   └── test_reference_pipeline.py 16-test suite (no external dependencies)
+│   └── test_reference_pipeline.py  16-test suite (no external dependencies)
 │
 └── diagrams/
-    └── README.md                  Pipeline diagram and architectural notes
+    └── README.md                   Pipeline diagram and architectural notes
 ```
 
 > **Install (optional).** The pipeline runs zero-install via the quickstart above.

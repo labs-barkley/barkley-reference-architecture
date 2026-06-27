@@ -88,10 +88,10 @@ If you need realistic-looking data, extend the synthetic generator in `barkley/`
 
 ```
 barkley/          # core library — type-annotated, mypy-clean
-examples/         # runnable reference pipeline
+examples/         # reference pipeline + head-to-head validation (synthetic)
 tests/            # pytest suite — must pass at all times
-notebooks/        # exploratory only, not part of the library
-docs/             # ethics, limitations, scientific positioning
+results/          # head-to-head results (HEAD_TO_HEAD_RESULTS.md) + figure
+diagrams/         # pipeline diagram and architectural notes
 ```
 
 ---
